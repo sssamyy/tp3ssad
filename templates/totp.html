@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Enter TOTP</h2>
+<form method="POST">
+    <input type="text" name="token" placeholder="Enter your TOTP" required><br>
+    <button type="submit">Submit</button>
+</form>
+<p>Your current TOTP is: {{ totp }}</p>
+{% endblock %}
